@@ -8,8 +8,8 @@ public class xuLy {
         System.out.println("Nhập số muốn chuyển: ");
         num = nhap.nextInt();
 
-        if (num >= 0 && num <20){
-            switch (num){
+        if (num >= 0 && num < 20) {
+            switch (num) {
                 case 0:
                     System.out.println("Zero");
                     break;
@@ -72,11 +72,11 @@ public class xuLy {
                     break;
             }
         }
-        if (num >=20 && num <100) {
+        if (num >= 20 && num < 100) {
             int tens = num / 10;
             int ones = num % 10;
 
-            switch (tens){
+            switch (tens) {
                 case 2:
                     System.out.print("Twenty");
                     break;
@@ -102,7 +102,7 @@ public class xuLy {
                     System.out.print("Ninety");
                     break;
             }
-            switch (ones){
+            switch (ones) {
                 case 0:
                     System.out.print("");
                     break;
@@ -135,12 +135,12 @@ public class xuLy {
                     break;
             }
         }
-        if (num >=100 && num <1000){
+        if (num >= 100 && num < 1000) {
             int hundred = num / 100;
-            int tenss = (num/10)%10;
-            int oness = num%10;
+            int tenss = (num / 10) % 10;
+            int oness = num % 10;
 
-            switch (hundred){
+            switch (hundred) {
                 case 1:
                     System.out.print("One hundred");
                     break;
@@ -169,74 +169,109 @@ public class xuLy {
                     System.out.print("Nine hundred");
                     break;
             }
-            if(oness >0 || tenss == 1) {
+            if (oness > 0 || tenss >= 1) {
                 System.out.print(" and ");
             }
-            switch (tenss){
-                case 0:
-                    System.out.print("");
-                    break;
-//                case 1:
-//                    System.out.print("Ten");
-//                    break;
-                case 2:
-                    System.out.print("Twenty");
-                    break;
-                case 3:
-                    System.out.print("Thirty");
-                    break;
-                case 4:
-                    System.out.print("Fourty");
-                    break;
-                case 5:
-                    System.out.print("Fifty");
-                    break;
-                case 6:
-                    System.out.print("Sixty");
-                    break;
-                case 7:
-                    System.out.print("Seventy");
-                    break;
-                case 8:
-                    System.out.print("Eighty");
-                    break;
-                case 9:
-                    System.out.print("Ninety");
-                    break;
-            }
-            switch (oness){
-                case 0:
-                    System.out.print("");
-                    break;
-                case 1:
-                    System.out.print(" one");
-                    break;
-                case 2:
-                    System.out.print(" two");
-                    break;
-                case 3:
-                    System.out.print(" three");
-                    break;
-                case 4:
-                    System.out.print(" four");
-                    break;
-                case 5:
-                    System.out.print(" five");
-                    break;
-                case 6:
-                    System.out.print(" six");
-                    break;
-                case 7:
-                    System.out.print(" seven");
-                    break;
-                case 8:
-                    System.out.print(" eight");
-                    break;
-                case 9:
-                    System.out.print(" nine");
-                    break;
-            }
+            if (tenss == 1 && oness >= 0) {
+                switch (oness) {
+                    case 0:
+                        System.out.print("Ten");
+                        break;
+                    case 1:
+                        System.out.print("Eleven");
+                        break;
+                    case 2:
+                        System.out.print("twelve");
+                        break;
+                    case 3:
+                        System.out.print("thirteen");
+                        break;
+                    case 4:
+                        System.out.print("fourteen");
+                        break;
+                    case 5:
+                        System.out.print("fifteen");
+                        break;
+                    case 6:
+                        System.out.print("sixteen");
+                        break;
+                    case 7:
+                        System.out.print("seventeen");
+                        break;
+                    case 8:
+                        System.out.print("eighteen");
+                        break;
+                    case 9:
+                        System.out.print("nineteen");
+                        break;
+                }
+            } else {
+                switch (tenss) {
+                    case 0:
+                        System.out.print("");
+                        break;
+                    case 1:
+                        System.out.print("Ten");
+                        break;
+                    case 2:
+                        System.out.print("Twenty");
+                        break;
+                    case 3:
+                        System.out.print("Thirty");
+                        break;
+                    case 4:
+                        System.out.print("Fourty");
+                        break;
+                    case 5:
+                        System.out.print("Fifty");
+                        break;
+                    case 6:
+                        System.out.print("Sixty");
+                        break;
+                    case 7:
+                        System.out.print("Seventy");
+                        break;
+                    case 8:
+                        System.out.print("Eighty");
+                        break;
+                    case 9:
+                        System.out.print("Ninety");
+                        break;
+                }
+                switch (oness) {
+                    case 0:
+                        System.out.print("");
+                        break;
+                    case 1:
+                        System.out.print("one");
+                        break;
+                    case 2:
+                        System.out.print("two");
+                        break;
+                    case 3:
+                        System.out.print("three");
+                        break;
+                    case 4:
+                        System.out.print("four");
+                        break;
+                    case 5:
+                        System.out.print("five");
+                        break;
+                    case 6:
+                        System.out.print("six");
+                        break;
+                    case 7:
+                        System.out.print("seven");
+                        break;
+                    case 8:
+                        System.out.print("eight");
+                        break;
+                    case 9:
+                        System.out.print("nine");
+                        break;
+                }
 
+            }
         }
     }
 }
